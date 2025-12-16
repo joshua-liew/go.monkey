@@ -55,11 +55,14 @@ func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
 		return false
 	}
 
+<<<<<<< HEAD
 	if letStmt.Name.Value != name {
 		t.Errorf("letStmt.Name.Value not '%s'. got=%s", name, letStmt.Name.Value)
 		return false
 	}
 
+=======
+>>>>>>> dc25bdb8c59a44bb98340ce1a88586d2e795c0a5
 	if letStmt.Name.TokenLiteral() != name {
 		t.Errorf("letStmt.Name.TokenLiteral() not '%s'. got=%s",
 			name, letStmt.Name.TokenLiteral())
